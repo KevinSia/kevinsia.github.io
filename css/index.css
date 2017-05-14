@@ -1,5 +1,8 @@
 body {
-  background-image: url('../img/elcapitan.jpg');
+  background: url('../img/elcapital.jpg') no-repeat fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
   background-size: cover;
   color: white;
   text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
