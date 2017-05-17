@@ -1,0 +1,48 @@
+#snake-game {
+  margin-top: 25px;
+}
+
+#snake-game .border-box {
+  /* needed for children to use position: absolute; (non-static)*/
+  position: relative;
+  border: 2px solid;
+  padding: 0;
+  margin: 0 auto;
+  width: 304px;
+  height: 304px;
+}
+
+#snake-game .snake {
+  /* absolute to its non-static positioned parent */
+  position: absolute;
+  float: left;
+  background-color: pink;
+  width: 10%;
+  height: 10%;
+  margin: 0;
+}
+
+#snake-game #snake-head {
+  top: 50%;
+  left: 30%;
+  background-color: plum;
+}
+
+#snake-game .snake-body {
+  top: 50%;
+  left: 40%;
+}
+
+#snake-game #snake-tail {
+  top: 50%;
+  left: 50%;
+}
+
+#snake-game .blink {
+    animation:blink 700ms infinite alternate;
+}
+
+@keyframes blink {
+    from { opacity:1; }
+    to { opacity:0; }
+};
